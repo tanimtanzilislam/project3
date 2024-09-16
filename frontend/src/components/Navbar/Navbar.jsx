@@ -401,6 +401,9 @@ const Navbar = ({ setShowLogin }) => {
                 <a href= '#app-download' onClick={()=>setMenu("Mobile-App")} className={menu ==="Mobile-App"?"active":""}>Mobile-app</a>
                 <a href= '#footer' onClick={()=>setMenu("Contact-us")} className={menu==="Contact-us"?"active":""}>Contact-us</a>
             </ul>
+            <li>
+                    <Link to='/details' onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>DetailPage</Link>
+                </li>
             <div className="navbar-right">
                 <img src={assets.search_icon} alt='' onClick={handleSearchClick} />
                 
